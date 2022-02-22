@@ -1,0 +1,318 @@
+@import url(null.css);
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+main{
+    padding: 40px 0 100px;
+}
+/*  ========= МАКЕТ =============== */
+
+.container-maket{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    max-width: 810px;
+    margin: 0 auto 100px;
+}
+
+.maket-title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #1E212C;
+    margin: 0 0 26px 0;
+}
+.info{
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+    color: #787A80;
+    margin: 0 0 13px 0;
+}
+.date{
+    display: inline-block;
+    background: url(../img/icons/01-Calendar.svg) 0 5px / 16px no-repeat;
+    padding: 0 0 0 24px;
+}
+.time{
+    display: inline-block;
+    margin: 0 0 0 24px;
+    background: url(../img/icons/02-time.svg) 0 5px / 16px no-repeat;
+    padding: 0 0 0 24px;
+}
+.share{
+    margin: 0 0 40px 0;
+}
+.share-text{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+    color: #1E212C;
+    margin: 0 12px 0 0;
+}
+.icons:not(:last-of-type){
+    margin: 0 0 40px 0;
+}
+.fb{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/03-Facebook.svg) 0 0/ 20px no-repeat;
+    margin: -3px 12px -3px 0;
+}
+.tw{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/04-Twitter.svg) 0 0/ 20px no-repeat;
+    margin: -3px 12px -3px 0;
+}
+.ln{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/05-Linked-In.svg) 0 0/ 20px no-repeat;
+    margin: -3px 0 -3px 0;
+}
+.image {
+    width: 810px;
+    height: 360px;
+    overflow:hidden;
+    margin: 0 0 60px 0;
+}
+.text-bold{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #1E212C;
+    margin: 0 0 24px 0;
+}
+.maket-text{
+    font-size: 16px;
+    line-height: 1.62;
+    color: #424551;
+    margin: 0 0 48px 0;
+}
+p:not(:last-of-type){
+    margin: 0 0 26px 0;
+}
+.quote-bold {
+    padding: 0 0 0 58px;
+    background: url(../img/icons/06-braces.svg) 0 0 / 28px 20px no-repeat ;
+    margin: 0 0 48px 0;
+}
+.text-2{
+    margin: 0 0 63px 0;
+}
+.text-2 > p:not(:last-of-type){
+    margin: 0 0 24px 0;
+}
+.maket-list{
+    margin: 0 0 24px 0;
+}
+.maket-item{
+    padding:  0 0 0 32px;
+    background: url(../img/icons/07-Vector.svg) 0 5px / 16px no-repeat;
+    margin: 0 0 4px 0;
+}
+.maket-item:last-child{
+    margin: 0;
+}
+/*  ========= ЗМЕЙКА =============== */
+.container-game{
+    background: palegoldenrod;
+    box-shadow: 0 3px 20px 15px gray;
+    font-size: 0;
+    padding: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.title-game{
+    font-family: Marck Scrip, cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.game{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.game-line{
+    background: purple;
+}
+.game-line1{
+    width: 50px;
+    height: 50px;
+}
+.game-line2{
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+.game-line1:hover + .game-line2,
+.game-line2:hover {
+    visibility: visible;
+}
+.game-line3{
+    width: 100%;
+    height: 50px;
+    visibility: hidden;
+}
+.game-line2:hover + .game-line3,
+.game-line3:hover{
+    visibility: visible;
+}
+.game-line4{
+    display: inline-block;
+    width: 960px;
+    height: 100px;
+}
+.game-line4-1{
+    display: inline-block;
+    width: 40px;
+    height: 100px;
+    visibility: hidden;
+}
+.game-line3:hover ~ .game-line4-1,
+.game-line4-1:hover{
+    display: inline-block;
+    visibility: visible;
+}
+.game-line5{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    visibility: hidden;
+}
+.game-line4-1:hover ~ .game-line5,
+.game-line5:hover{
+    display: inline-block;
+
+    width: 100%;
+    visibility: visible;
+}
+.game-line6{
+    width: 30px;
+    height: 50px;
+    visibility: hidden;
+}
+.game-line5:hover ~ .game-line6,
+.game-line6:hover{
+    visibility: visible;
+}
+.game-line7{
+    width: 450px;
+    height: 30px;
+    visibility: hidden;
+
+}
+.game-line6:hover + .game-line7,
+.game-line7:hover{
+    visibility: visible;
+}
+.game-line8{
+    margin-left:430px ;
+    width: 20px;
+    height: 30px;
+    visibility: hidden;
+}
+.game-line7:hover + .game-line8,
+.game-line8:hover{
+    visibility: visible;
+}
+
+.romb{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; 
+    visibility: hidden;
+    box-shadow: 2px 2px 5px 2px gray;
+    border-radius: 50px;
+}
+.blue{
+    background: rgb(97, 97, 236);
+}
+.pink{
+    background: rgb(196, 80, 200);
+}
+.green{
+    background: rgb(78, 202, 202);
+}
+.orange{
+    background: rgb(196, 214, 33);
+}
+
+.element8{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: black;
+    background: rgba(199, 199, 132, 0.74) url(../img/01.svg) center/ 100px no-repeat;
+}
+.element8:hover{
+    display: inline-block;
+    width: 1000px;
+    height: 600px;
+    background: url(../img/01.jpg) center no-repeat;
+    margin: -350px 0 0 -350px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 15px 3px rgb(0, 0, 0);
+}
+.element1{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 50px;
+}
+.element2{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    border-top-right-radius: 50px;
+}
+.element3,
+.element4,
+.element12,
+.element13{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.element5,
+.element11{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+}
+.element6,
+.element7,
+.element9,
+.element10{
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+}
+.element14{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    border-bottom-left-radius: 50px;
+}
+.element15{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-bottom-right-radius: 50px;
+} 
+.game-line8:hover + .romb,
+.romb:hover{
+    visibility: visible;
+}
